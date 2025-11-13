@@ -1,0 +1,45 @@
+:root{
+    --accent:#ff3b30; /* vermelho corrida */
+    --dark:#0b1221;
+}
+body{
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:#f6f7fb;
+    color:#111;
+}
+.hero{
+    background-image: linear-gradient(rgba(11,18,33,0.55), rgba(11,18,33,0.55)), url('../img/0911813b1e5b2eddb7bc9090f8eaad88.jpg');
+    background-size:cover;
+    background-position:center; 
+    color:white; 
+    padding:6rem 0; 
+    border-radius:0.75rem;
+}
+.btn-accent{
+    background:var(--accent);
+    color:white;
+    border:none
+}
+.card-driver img{
+    height:200px;
+    object-fit:cover
+}
+.race-badge{
+    background:#111;
+    color:white;
+    font-weight:600;
+    padding:0.25rem 0.5rem;
+    border-radius:0.25rem
+}
+footer{
+    background:#071029;
+    color:#cfe6ff;
+    padding:2rem 0
+}
+.logo-compact{
+    font-weight:800;
+    color:var(--accent)
+}
+@media (max-width:600px){
+    .hero{padding:3rem 1rem}
+}

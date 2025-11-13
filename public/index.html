@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocidade Brasil — Automobilismo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 shadow-sm">
+  <a class="navbar-brand d-flex align-items-center" href="index.html"><span class="logo-compact me-2">CM</span>ConectaMais Velocidade Brasil</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="#calendario">Calendário</a></li>
+      <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastrar-se</a></li>
+      <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home" class="container mt-4">
+  <div class="hero p-4 shadow-sm">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h1 class="display-5">Acelerando emoções — tudo sobre automobilismo</h1>
+        <p class="lead mt-3">Resultados, pilotos, bastidores e calendário das principais categorias. Conteúdo em alta velocidade, direto da pista.</p>
+        <div class="mt-4">
+          <a href="#calendario" class="btn btn-accent me-2">Próximas provas</a>
+          <a href="#noticias" class="btn btn-outline-light">Últimas notícias</a>
+        </div>
+      </div>
+      <div class="col-md-5 d-none d-md-block text-end">
+        <img src="img/corrida.jpg" alt="carro corrida" class="img-fluid rounded shadow-sm" style="max-height:260px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container my-5">
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <h3 id="noticias" class="mb-3">Últimas notícias</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/mustang.jpg" class="card-img-top" alt="noticia">
+            <div class="card-body">
+              <h5 class="card-title">Vitória emocionante no circuito urbano</h5>
+              <p class="card-text small text-muted">Piloto X supera adversidades e vence depois de disputa acirrada. Resultados e entrevistas.</p>
+              <a href="#" class="stretched-link">Ler mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/tecnico de rally.jpg" class="card-img-top" alt="noticia">
+            <div class="card-body">
+              <h5 class="card-title">Novas atualizações de regulamento</h5>
+              <p class="card-text small text-muted">Comissão técnica anuncia mudanças que afetam estratégias de corrida e performance.</p>
+              <a href="#" class="stretched-link">Ler mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="mt-4">
+        <h4>Artigos em destaque</h4>
+        <div class="list-group mt-2">
+          <a href="#" class="list-group-item list-group-item-action">Análise: Setup ideal para pista molhada</a>
+          <a href="#" class="list-group-item list-group-item-action">História: Grandes ultrapassagens da última década</a>
+          <a href="#" class="list-group-item list-group-item-action">Tecnologia: Como telemetria mudou a estratégia das equipes</a>
+        </div>
+      </section>
+    </div>
+
+    <aside class="col-lg-4">
+      <h3 id="pilotos" class="mb-3">Pilotos em destaque</h3>
+      <div class="card mb-3 card-driver">
+        <img src="img/equipe.webp" class="card-img-top" alt="piloto 1">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Red bull</h5>
+          <p class="small text-muted">Equipe: Red Bull • Nº 7</p>
+          <p class="mb-1">Especialista em circuitos mistos — 3 vitórias na temporada.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-sm btn-outline-dark" href="#">Perfil</a>
+            <a class="btn btn-sm btn-accent" href="#">Últimas</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 card-driver">
+        <img src="img/vitoria.jpg" class="card-img-top" alt="piloto 2">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Max Verstappen</h5>
+          <p class="small text-muted">Equipe: Red bull Racing • Nº 1</p>
+          <p class="mb-1">Rapidez nas retas e excelente consistência de volta. <br>O número de Max Verstappen é o #1 desde a temporada de 2022.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-sm btn-outline-dark" href="#">Perfil</a>
+            <a class="btn btn-sm btn-accent" href="#">Últimas</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselPilotos" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active"><img src="img/Zandvoort e Barcelona.jpg" class="d-block w-100" alt="..." style="height:160px; object-fit:cover"></div>
+          <div class="carousel-item"><img src="img/Suzuka.jpg" class="d-block w-100" alt="..." style="height:160px; object-fit:cover"></div>
+          <div class="carousel-item"><img src="img/Hockenheimring.jpg" class="d-block w-100" alt="..." style="height:160px; object-fit:cover"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPilotos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPilotos" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+    </aside>
+  </div>
+
+  <section id="calendario" class="mt-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4>Calendário 2025</h4>
+        <p class="small text-muted">Datas e locais das próximas etapas.</p>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="table-dark">
+              <tr><th>#</th><th>Data</th><th>Prova</th><th>Local</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>12 Jan 2025</td><td>GP Cidade Urbana</td><td>São Paulo</td><td><span class="race-badge">FIM</span></td></tr>
+              <tr><td>2</td><td>09 Fev 2025</td><td>Enduro do Sol</td><td>Brasília</td><td><span class="race-badge">NACIONAL</span></td></tr>
+              <tr><td>3</td><td>27 Mar 2025</td><td>Circuito das Águas</td><td>Curitiba</td><td><span class="race-badge">FIM</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5 p-4 rounded shadow-sm bg-white">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h5>Receba boletim semanal</h5>
+        <p class="small text-muted">Resumo com resultados e notícias direto no seu e-mail.</p>
+      </div>
+      <div class="col-md-4">
+        <form class="d-flex" onsubmit="event.preventDefault(); alert('Obrigado — funcionalidade demo');">
+          <input class="form-control me-2" placeholder="seu@email.com">
+          <button class="btn btn-accent">Inscrever</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato" class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Velocidade Brasil</h5>
+        <p class="small">Conectando fãs, pilotos e equipes. Projeto demo</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Menu</h6>
+        <ul class="list-unstyled small">
+          <li><a class="text-decoration-none text-light" href="#">Início</a></li>
+          <li><a class="text-decoration-none text-light" href="#">Pilotos</a></li>
+          <li><a class="text-decoration-none text-light" href="#">Calendário</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Contato</h6>
+        <p class="small mb-1">email: contato@velocidadebr.com</p>
+        <p class="small">Tel: (11) 99999-9999</p>
+      </div>
+    </div>
+    <div class="text-center mt-3 small">&copy; 2025 Velocidade Brasil</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
